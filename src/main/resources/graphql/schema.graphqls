@@ -1,0 +1,24 @@
+type Query {
+    getContainer(id: ID!): Container!
+    getContainers: [Container!]!
+}
+
+type Mutation {
+    upsertContainer(input: UpsertContainerInput!): Container!
+}
+
+type Container {
+    id: ID!
+    userId: ID!
+    name: String!
+    description: String
+    content: [String!]!
+}
+
+input UpsertContainerInput {
+    id: ID
+    userId: ID!
+    name: String!
+    description: String
+    content: [String]!
+}

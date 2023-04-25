@@ -1,0 +1,13 @@
+spring:
+  application.name: organeyeze-backend
+  main:
+    banner-mode: off
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: organeyeze
+
+  graphql:
+    graphiql:
+      enabled: true
