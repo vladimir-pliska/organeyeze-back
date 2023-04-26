@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository
 @Document("container")
 data class Container(
     val _id: ObjectId,
-    val userId: ObjectId,
     val name: String,
     val description: String? = null,
     val content: List<String> = emptyList()
