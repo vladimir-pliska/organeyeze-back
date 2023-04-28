@@ -9,7 +9,6 @@ type Mutation {
 
 type Container {
     id: ID!
-    userId: ID!
     name: String!
     description: String
     content: [String!]!
@@ -17,7 +16,6 @@ type Container {
 
 input UpsertContainerInput {
     id: ID
-    userId: ID!
     name: String!
     description: String
     content: [String]!
